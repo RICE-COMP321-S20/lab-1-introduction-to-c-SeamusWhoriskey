@@ -1,6 +1,14 @@
 #include <stdio.h>
 
-/* Put your function here. */
+int
+fact_rec(int x)
+{
+  if (x == 1)
+    return (1);
+  else
+    return (x * fact_rec(x-1));
+    
+}
 
 int
 main(void)
